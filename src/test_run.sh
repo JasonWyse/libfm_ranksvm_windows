@@ -1,4 +1,4 @@
- JAVA_HOME/bin/javac -cp  $pro/src/ict/edu/learning/test/Test.java
+ JAVA_HOME/bin/javac   $pro/src/ict/edu/learning/test/Test.java
 echo 'compiling is over'
 nohup $JAVA_HOME/bin/java ict/edu/learning/test/Test -train $pro/data/\
 OHSUMED/OHSUMED/QueryLevelNorm/Fold1/train.txt  -test  $pro/data/OHSUMED/OHSUMED/QueryLevelNorm/Fold1/test.txt \
