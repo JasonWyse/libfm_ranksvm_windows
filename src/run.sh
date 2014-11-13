@@ -1,5 +1,5 @@
-
-JAVA_HOME/bin/javac ict/edu/learning/logisticRankSVM/LogisticRankSVM.java
+rm -f ciir/umass/edu/learning *.class
+$JAVA_HOME/bin/javac ict/edu/learning/logisticRankSVM/LogisticRankSVM.java
 echo 'compiling is over'
 nohup $JAVA_HOME/bin/java ict/edu/learning/logisticRankSVM/LogisticRankSVM -train ../data/\
 OHSUMED/OHSUMED/QueryLevelNorm/Fold1/train.txt  -test  ../data/OHSUMED/OHSUMED/QueryLevelNorm/Fold1/test.txt \
