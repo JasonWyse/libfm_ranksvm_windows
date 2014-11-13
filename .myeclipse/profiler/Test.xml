@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<entry key="profiler.settings.instrument.empty.methods">true</entry>
+<entry key="ProfilerCPUSettings_profile_runnables">true</entry>
+<entry key="profiler.settings.n.profiled.threads.limit">32</entry>
+<entry key="ProfilerCPUSettings_filter_type">2</entry>
+<entry key="profiler.settings.obj.alloc.stack.sampling.depth">-1</entry>
+<entry key="profiler.settings.instrument.method.invoke">true</entry>
+<entry key="profiler.settings.instr.scheme">1</entry>
+<entry key="ProfilerMemorySettings_track_every">10</entry>
+<entry key="ProfilerMemorySettings_mode">4</entry>
+<entry key="ProfilerCPUSettings_root_classes">ciir.umass.edu.features.**
+ciir.umass.edu.learning.**
+ciir.umass.edu.metric.**
+ciir.umass.edu.utilities.**
+ict.edu.learning.baseline.**
+ict.edu.learning.logisticRankSVM.**
+ict.edu.learning.measure.**
+ict.edu.learning.multiThread.**
+ict.edu.learning.test.**
+ict.edu.learning.utilities.**
+</entry>
+<entry key="ProfilerCPUSettings_filter_value">ciir.umass.edu.features.*,&#13;
+ciir.umass.edu.learning.*,&#13;
+ciir.umass.edu.metric.*,&#13;
+ciir.umass.edu.utilities.*,&#13;
+ict.edu.learning.baseline.*,&#13;
+ict.edu.learning.logisticRankSVM.*,&#13;
+ict.edu.learning.measure.*,&#13;
+ict.edu.learning.multiThread.*,&#13;
+ict.edu.learning.test.*,&#13;
+ict.edu.learning.utilities.*</entry>
+<entry key="profiler.settings.istrument.getter.setter.methods">true</entry>
+<entry key="myeclipse.profiling.mode">0</entry>
+<entry key="ProfilerMemorySettings_stacktraces">-1</entry>
+<entry key="profiler.settings.sampling.interval">10</entry>
+<entry key="profiler.settings.cpu.profiling.type">0</entry>
+</properties>
