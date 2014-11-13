@@ -1,0 +1,1 @@
+-filename matrixV/MatrixV.txt -train data\OHSUMED\OHSUMED\QueryLevelNorm\Fold1\train.txt  -test data\OHSUMED\OHSUMED\QueryLevelNorm\Fold1\test.txt  -validate  data\OHSUMED\OHSUMED\QueryLevelNorm\Fold1\vali.txt -norm zscore -nThread 1 -learningRate 0.00001
