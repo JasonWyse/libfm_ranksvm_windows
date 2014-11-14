@@ -15,7 +15,7 @@ public class FileUtils {
 	public static boolean write2File(String filename , Matrix m, String description)  {
 		//BufferedWriter out = null;
 		StringBuffer sb = new StringBuffer();
-		sb.append("# " + description + "\r\n");
+		sb.append("# " + description + System.getProperty("line.separator"));
 		try {  
             // 打开一个写文件器，构造函数中的第二个参数true表示以追加形式写文件  
             FileWriter writer = new FileWriter(filename, true); 
@@ -23,9 +23,9 @@ public class FileUtils {
 				for (int j = 0; j < Matrix.ColsOfVMatrix; j++) {
 					sb.append(m.getV()[i][j]).append("\t");
 				}
-				sb.append("\r\n");
+				sb.append(System.getProperty("line.separator"));
 			}
-            sb.append("\r\n");
+            sb.append(System.getProperty("line.separator"));
             
             writer.write(sb.toString());  
             writer.close();  
@@ -37,14 +37,14 @@ public class FileUtils {
 	public static boolean write2File(String filename , Vector v, String description)  {
 		//BufferedWriter out = null;
 		StringBuffer sb = new StringBuffer();
-		sb.append("# " + description + "\r\n");
+		sb.append("# " + description + System.getProperty("line.separator"));
 		try {  
             // 打开一个写文件器，构造函数中的第二个参数true表示以追加形式写文件  
             FileWriter writer = new FileWriter(filename, true); 
             for (int i = 0; i < Vector.getVectorSize(); i++) {				
 					sb.append(v.getVec()[i]).append("\t");					
 			}
-            sb.append("\r\n");
+            sb.append(System.getProperty("line.separator"));
             
             writer.write(sb.toString());  
             writer.close();  
