@@ -609,7 +609,7 @@ public class LogisticRankSVM extends Ranker{
     	v.randomize();*/
 		SimpleDateFormat sdf = new SimpleDateFormat("yy-MM-dd-HH-mm");
 		String date = sdf.format(new Date());
-		String filename = "matrixV/matrixV"+date+".txt";
+		String filename = "output/matrixV/matrixV"+date+".txt";
 		FileUtils.write2File(filename, v, filename);
 		Matrix v2 = FileUtils.readFromFileGetMatrix(filename);
 		List<ArrayList<Double>> dll_train = getScoreByFun(rll_train,v2);

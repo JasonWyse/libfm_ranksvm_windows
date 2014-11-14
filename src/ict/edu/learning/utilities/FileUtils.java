@@ -34,6 +34,25 @@ public class FileUtils {
         }  
 		return true;
 	}
+	public static boolean write2File(String filename , List<ArrayList<Double>> m, String description)  {
+		//BufferedWriter out = null;
+		StringBuffer sb = new StringBuffer();
+//		sb.append("# " + description + System.getProperty("line.separator"));
+		try {  
+            // 打开一个写文件器，构造函数中的第二个参数true表示以追加形式写文件  
+            FileWriter writer = new FileWriter(filename, true); 
+            for (int i = 0; i < m.size(); i++) {
+				for (int j = 0; j < m.get(i).size(); j++) {
+					sb.append(m.get(i).get(j)).append(System.getProperty("line.separator"));
+				}				
+			}     
+            writer.write(sb.toString());  
+            writer.close();  
+        } catch (IOException e) {  
+            e.printStackTrace();  
+        }  
+		return true;
+	}
 	public static boolean write2File(String filename , Vector v, String description)  {
 		//BufferedWriter out = null;
 		StringBuffer sb = new StringBuffer();

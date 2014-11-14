@@ -85,6 +85,13 @@ public class Test {
 				lrs.normalize(rll_test, features);
 		}
 		StringBuffer sb = new StringBuffer();
+		Matrix V =ml.get(ml.size()-1);//选择最新训练出来的matrix
+		List<ArrayList<Double>> dll_train1 = getScoreByFun(rll_train,V);
+		FileUtils.write2File("output/prediction_train.txt", dll_train1, "");
+		List<ArrayList<Double>> dll_vali1 = getScoreByFun(rll_validation,V);
+		FileUtils.write2File("output/prediction_validation.txt", dll_vali1, "");
+		List<ArrayList<Double>> dll_test1 = getScoreByFun(rll_test,V);
+		FileUtils.write2File("output/prediction_test.txt", dll_test1, "");
 		for (int j = 0; j < ml.size(); j++) {
 			sb.append("--------------for matrix "+j+"--------------").append(System.getProperty("line.separator"));
 			List<ArrayList<Double>> dll_train = getScoreByFun(rll_train,ml.get(j));
